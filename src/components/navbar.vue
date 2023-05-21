@@ -1,11 +1,11 @@
 <template>
   <nav class="navbar p-0">
-    <div class="container">
-      <div class="navbar-brand">
+    <div class="container p-0">
+      <div class="navbar-brand p-0">
         <img src="../img/dc-logo.png" />
       </div>
-      <nav class="nav-item">
-        <a>characters</a>
+      <nav class="nav-item p-0">
+        <a>characters </a>
         <a>comics</a>
         <a>movies</a>
         <a>tv</a>
@@ -30,7 +30,6 @@ $container-height: 7em;
 $underline-height: 5px;
 
 .container {
-  height: $container-height;
   display: flex;
 
   .navbar-brand {
@@ -44,7 +43,7 @@ $underline-height: 5px;
   }
 
   .nav-item {
-    height: $container-height;
+    position: relative;
     display: flex;
     align-items: center;
     gap: 2em;
@@ -52,8 +51,8 @@ $underline-height: 5px;
     a {
       font-weight: bolder;
       font-size: smaller;
-      line-height: $container-height;
       text-transform: uppercase;
+      line-height: $container-height;
     }
   }
 }

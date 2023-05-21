@@ -2,7 +2,6 @@
   <jumboContent></jumboContent>
   <jumboNavBar></jumboNavBar>
   <div class="container-fluid main p-5">
-    <img src="../img/dc-logo-bg.png" />
     <div class="container">
       <div class="main--container">
         <div class="item--container p-0">
@@ -123,7 +122,6 @@ $list-title--color: white;
 $list-item--color: rgb(103, 103, 103);
 
 .main {
-  position: absolute;
   background-image: url("../img/footer-bg.jpg");
   background-position: center;
   img {
