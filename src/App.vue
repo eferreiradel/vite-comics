@@ -2,8 +2,15 @@
   <div class="container-fluid p-0">
     <div class="row justify-content-center">
       <div class="col-12 p-">
-        <navbar></navbar>
-        <jumboMain></jumboMain>
+        <header>
+          <navbar></navbar>
+        </header>
+        <main>
+          <jumboMain></jumboMain>
+        </main>
+        <footer>
+          <appFooter></appFooter>
+        </footer>
       </div>
     </div>
   </div>
@@ -13,12 +20,15 @@
 import navBar from "./components/navBar.vue";
 // jumbo
 import jumboMain from "./components/jumbo-main.vue";
+//footer
+import appFooter from "./components/app-footer.vue";
 
 export default {
   name: "App",
   components: {
     navbar: navBar,
     jumboMain: jumboMain,
+    appFooter: appFooter,
   },
 };
 </script>
