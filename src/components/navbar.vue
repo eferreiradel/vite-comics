@@ -95,7 +95,7 @@ $underline-height: 5px;
       }
     }
     span:hover {
-      .underline {
+      car.underline {
         opacity: 100;
         display: block;
       }

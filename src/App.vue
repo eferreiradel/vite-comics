@@ -6,6 +6,7 @@
           <navbar></navbar>
         </header>
         <main>
+          <cardList></cardList>
           <jumboMain></jumboMain>
         </main>
         <footer>
@@ -18,6 +19,7 @@
 
 <script>
 import navBar from "./components/navBar.vue";
+import cardList from "./components/card.list.vue";
 // jumbo
 import jumboMain from "./components/jumbo-main.vue";
 //footer
@@ -29,6 +31,10 @@ export default {
     navbar: navBar,
     jumboMain: jumboMain,
     appFooter: appFooter,
+    cardList: cardList,
+  },
+  data() {
+    return {};
   },
 };
 </script>

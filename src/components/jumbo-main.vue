@@ -1,6 +1,4 @@
 <template>
-  <jumboContent></jumboContent>
-
   <jumboNavBar></jumboNavBar>
   <div class="container-fluid main p-5">
     <div class="container">
@@ -109,12 +107,10 @@
 </template>
 <script>
 import jumboNavBar from "./jumbo-navbar.vue";
-import jumboContent from "./jumbo-content.vue";
 export default {
   nama: "jumboMain",
   components: {
     jumboNavBar: jumboNavBar,
-    jumboContent: jumboContent,
   },
 };
 </script>

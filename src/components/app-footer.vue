@@ -2,6 +2,7 @@
   <div class="container-fluid main">
     <div class="container">
       <div class="navbar--item">
+        <p>{{ age }}</p>
         <button class="btn">
           <a href="#"> SIGN-UP NOW </a>
         </button>
@@ -31,6 +32,7 @@
 <script>
 export default {
   name: "appFooter",
+  props: ["age"],
 };
 </script>
 
