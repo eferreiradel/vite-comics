@@ -1,9 +1,11 @@
 <template>
   <jumboContent></jumboContent>
+
   <jumboNavBar></jumboNavBar>
   <div class="container-fluid main p-5">
     <div class="container">
       <div class="main--container">
+        <img src="../img/dc-logo-bg.png" />
         <div class="item--container p-0">
           <div class="tem--container p-0">
             <h5>DC COMICS</h5>
@@ -122,13 +124,16 @@ $list-title--color: white;
 $list-item--color: rgb(103, 103, 103);
 
 .main {
+  overflow: hidden;
+  z-index: 0;
   background-image: url("../img/footer-bg.jpg");
   background-position: center;
+  position: relative;
   img {
-    height: 120%;
-    top: -15%;
+    object-fit: cover;
+    top: -10%;
     right: 20%;
-    z-index: 0;
+    z-index: 1;
     position: absolute;
   }
   .main--container {
