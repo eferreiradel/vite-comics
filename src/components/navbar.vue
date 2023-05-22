@@ -5,16 +5,46 @@
         <img src="../img/dc-logo.png" />
       </div>
       <nav class="nav-item p-0">
-        <a>characters </a>
-        <a>comics</a>
-        <a>movies</a>
-        <a>tv</a>
-        <a>games</a>
-        <a>collectibles</a>
-        <a>videos</a>
-        <a>fans</a>
-        <a>news</a>
-        <a>shop</a>
+        <span>
+          <a>characters </a>
+          <span class="underline"></span>
+        </span>
+        <span>
+          <a>comics</a>
+          <span class="underline"></span>
+        </span>
+        <span>
+          <a>movies</a>
+          <span class="underline"></span>
+        </span>
+        <span>
+          <a>tv</a>
+          <span class="underline"></span>
+        </span>
+        <span>
+          <a>games</a>
+          <span class="underline"></span>
+        </span>
+        <span>
+          <a>collectibles</a>
+          <span class="underline"></span>
+        </span>
+        <span>
+          <a>videos</a>
+          <span class="underline"></span>
+        </span>
+        <span>
+          <a>fans</a>
+          <span class="underline"></span>
+        </span>
+        <span>
+          <a>news</a>
+          <span class="underline"></span>
+        </span>
+        <span>
+          <a>shop</a>
+          <span class="underline"></span>
+        </span>
       </nav>
     </div>
   </nav>
@@ -22,6 +52,10 @@
 <script>
 export default {
   name: "navBar",
+  data() {
+    return {};
+  },
+  methods: {},
 };
 </script>
 
@@ -43,10 +77,29 @@ $underline-height: 5px;
   }
 
   .nav-item {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 2em;
+    span {
+      position: relative;
+
+      .underline {
+        opacity: 0;
+        background-color: rgb(0, 89, 255);
+        position: absolute;
+        height: 10px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transition: 0.1s ease-in-out;
+      }
+    }
+    span:hover {
+      .underline {
+        opacity: 100;
+        display: block;
+      }
+    }
 
     a {
       font-weight: bolder;
